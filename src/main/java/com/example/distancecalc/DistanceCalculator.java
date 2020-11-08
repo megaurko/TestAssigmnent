@@ -12,7 +12,7 @@ public class DistanceCalculator {
     private final int timeoutSec;
     private final int threadCount;
 
-    private boolean isRunning = false;
+    private volatile boolean isRunning = false;
     private ExecutorService executor;
     private long interruptTime;
 
